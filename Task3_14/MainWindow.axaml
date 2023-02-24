@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Task3_14.MainWindow"
+        Title="Task3_14" Height="1000" Width="800">
+        
+        <StackPanel>
+                <Menu Height="20" VerticalAlignment="Top">
+                        <MenuItem Header="Альбом">
+                                <MenuItem Header="Создать альбом" Click="MenuItemCreateAlbum_OnClick"></MenuItem>
+                                <MenuItem Header="Открыть альбом" Click="MenuItemOpenAlbum_OnClick"></MenuItem>
+                                <MenuItem Header="Очистить альбом" Click="MenuItemClearAlbum_onClick"></MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Фотография">
+                                <MenuItem Header="Добавить фотографию" Click="MenuItemAddPhoto_OnClick"></MenuItem>
+                                <MenuItem Header="Удалить фотографию" Click="MenuItemDeletePhoto_OnClick"></MenuItem>
+                                <MenuItem Header="Количество фотографий" Click="MenuItemCountPhotos_OnClick"></MenuItem>
+                        </MenuItem>
+                </Menu>
+                <TextBlock HorizontalAlignment="Center" Name="albumNameblock"></TextBlock>
+                <ScrollViewer Height="800" Width="400">
+                        <StackPanel Width="400" Spacing="5" Name="photos"></StackPanel>
+                </ScrollViewer>
+                <StackPanel Orientation="Horizontal"
+                            Height="60"
+                            Width="200"
+                            Spacing="5">
+                        <Button Click="ButtonPageBack_OnClick">Назад</Button>
+                        <Button Click="ButtonPageForward_OnClick">Вперед</Button>
+                </StackPanel>
+                <TextBlock Name="photoCount" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+                
+</Window>

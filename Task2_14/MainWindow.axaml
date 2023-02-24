@@ -1,0 +1,18 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
+        x:Class="Task2_14.MainWindow"
+        Title="Task2_14" Height="450" Width="350">
+        
+        <StackPanel HorizontalAlignment="Center">
+                <Button Name="InputFileButton" Click="inputFileButton_Click">Выбрать файл для чтения</Button>
+                <TextBlock Name="tableName"/>
+                <Grid Name="tableGrid"></Grid>
+                <Button Name="CountSumsButton" Click="CountSumsButton_Click">Посчитать суммы и записать в файл</Button>
+                <TextBlock Name="sumsBlock"/>
+                <StackPanel Name="sumsList"></StackPanel>
+                <TextBlock Name="outputFilename"/>
+        </StackPanel>
+</Window>
